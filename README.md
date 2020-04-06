@@ -2,7 +2,7 @@
 
 > ## From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/mini-message-board)
 
-> - [Live Demo](https://obylisk-mini-message-board.herokuapp.com/) :shipit:
+> - [Live Demo](https://obylisk-mini-message-board.herokuapp.com/)
 
 ## Assignment
 
