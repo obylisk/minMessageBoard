@@ -1,12 +1,11 @@
 extends layout
 
 block content
-  h1= title
+  h1 = title
   p Welcome to #{title}
-
-res.render('index', { title: "Mini Messageboard", messages: messages }).
-
-  if (user == "Amando") {
-    document.h1.textContent = user;
-    document.p.textContent = text + " " + date;
-  }
+  ul
+    eacg val in messages
+      li #{val.user} @ #{val.added}:
+      | #{val.text}
+      
+  a(href="/new") New Message
