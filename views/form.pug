@@ -4,14 +4,14 @@ block content
   h1= title
   p Enter your message below:
   
-  //form
+  //form that takes user's name and message to add to message board
   form(method = "POST" action = "/new")
-  div.form-group
-  label(for = user) User:
-  input#name.form-control(type = "text", placeholder = "Name" name = "user")
-  br
-  label(for = text) Text: 
-  input#text.form-control(type = "text", placeholder = "Message" name = "text")
-  div.form-group
-  br
-  button(type = "submit") Submit
+    div.form-group
+      label(for = user) User:
+      input#name.form-control(type = "text", placeholder = "Name" name = "user")
+      br
+    div.form-group
+      label(for = text) Text: 
+      input#text.form-control(type = "text", placeholder = "Message" name = "text")
+      br
+      button(type = "submit") Submit
