@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  h1 = title
+  h1= title
   p Welcome to #{title}
   ul
-    eacg val in messages
+    each val in messages
       li #{val.user} @ #{val.added}:
       | #{val.text}
       
