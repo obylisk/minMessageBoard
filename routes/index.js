@@ -8,7 +8,7 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Mini Message Board' });
+  res.render('index', { title: 'Mini Message Board', messages: messages });
 });
 
 //GET new page
