@@ -12,4 +12,21 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+//GET new page
+
+router.get('/new', function(req, res, next) {
+  res.render('form', { title: 'Post New Message' });
+});
+
+//POST new message
+router.post("/new", (req, res, next) => {
+  messages.push({
+    text: req.body.text,
+    user: req.body.user,
+    added: new Date()
+  });
+  res.redirect("/");
+});
+
+
 module.exports = router;
